@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobileApp;Assembly=MobileApp"
+             x:Class="MobileApp.Pages.TermsCondictionsPage"
+             BackgroundColor="#ffab91">
+
+  <ContentPage.Content>
+    <Grid>
+      <StackLayout Orientation="Horizontal"
+                   VerticalOptions="Start"
+                   HorizontalOptions="FillAndExpand"
+                   HeightRequest="150"
+                   BackgroundColor="#77000000" >
+
+        <Grid HorizontalOptions="Start"
+              Padding="20"
+              VerticalOptions="Center">
+
+          <Label FontAttributes="Bold" FontSize="46" VerticalOptions="Center">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span Text="IsMy" ForegroundColor="#1a237e"/>
+                <Span Text="Pass" ForegroundColor="#ff5722"/>
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+
+          <Label Text="Ops. Sua senha é a proxima!"
+                 TextColor="White"
+                 VerticalOptions="End"/>
+
+        </Grid>
+
+      </StackLayout>
+
+      <StackLayout VerticalOptions="Center">
+
+        <Button Text="Termos e Condições"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                Clicked="OnLinkTermosClicked"/>
+
+      </StackLayout>
+
+      <StackLayout Padding="10" VerticalOptions="End">
+
+        <Button Text="ACEITAR E CONTINUAR"
+                TextColor="White"
+                BackgroundColor="#ff5722"
+                VerticalOptions="End"
+                HeightRequest="50"
+                Clicked="OnIgreeClicked"/>
+
+      </StackLayout>
+
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
