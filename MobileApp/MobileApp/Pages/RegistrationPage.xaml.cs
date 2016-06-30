@@ -37,7 +37,7 @@ namespace MobileApp.Pages
             entryPhone.IsEnabled = false;
             entryCodigo.IsEnabled = true;
 
-            btnEnviarConfirmar.Text = "Confirmar";
+            btnEnviarConfirmar.Text = "CONFIRMAR";
 
             entryCodigo.Focus();
             enviouPhone = true;
@@ -53,7 +53,10 @@ namespace MobileApp.Pages
             FileHelper fileHelper = new FileHelper();
             fileHelper.WriteTextAsync("UserInfo", strPhoneNumber);
 
-            App.Current.MainPage = new PrincipalPage();
+            var principalPage = new NavigationPage(new PrincipalPage());
+            principalPage.BarBackgroundColor = AppConstants.CorPrincipal;
+
+            App.Current.MainPage = principalPage;
         }
     }
 }

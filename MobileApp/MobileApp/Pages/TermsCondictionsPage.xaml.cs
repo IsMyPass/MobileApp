@@ -15,15 +15,16 @@ namespace MobileApp.Pages
             InitializeComponent();
         }
 
-        public void OnIgreeClicked(object sender, EventArgs e)
+        public async void OnIgreeClicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new RegistrationPage();
+            RegistrationPage registrationPage = new RegistrationPage();
+            await Navigation.PushAsync(registrationPage);
         }
 
         public async void OnLinkTermosClicked(object sender, EventArgs e)
         {
-            TermsDescriptionPage terms = new TermsDescriptionPage();
-            await Navigation.PushAsync(terms);
+            TermsDescriptionPage termsPage = new TermsDescriptionPage();
+            await Navigation.PushAsync(termsPage);
         }
     }
 }

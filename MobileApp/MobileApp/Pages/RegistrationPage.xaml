@@ -2,36 +2,51 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileApp.Pages.RegistrationPage"
-             BackgroundColor="White">
-  
+             BackgroundColor="#ffab91">
+
   <ContentPage.Content>
     <StackLayout Spacing="10" Padding="5">
-      <Label Text="Para registrar seu aplicativo informe o número de seu celular, em seguida você receberá um código de confirmação via SMS."/>
-      
+      <Label
+        Text="Para registrar seu aplicativo informe o número de seu celular, em seguida você receberá um código de confirmação via SMS."
+        TextColor="White"
+        FontSize="16"
+      />
+
       <Label Text="Informe o número do seu celular."
+             TextColor="White"
+             FontSize="16"
              VerticalOptions="Center"
              HorizontalOptions="Center"/>
-      
+
       <Entry x:Name="entryPhone"
              VerticalOptions="Center"
-             Placeholder="(99) 9999-9999" 
-             FontSize="18"/>
+             Placeholder="(99) 9999-9999"
+             FontSize="18"
+             TextColor="White"
+             BackgroundColor="White"
+      />
 
       <Label Text="Código de Confirmação."
+             TextColor="White"
+             FontSize="16"
              VerticalOptions="Center"
              HorizontalOptions="Center"/>
 
       <Entry x:Name="entryCodigo"
              VerticalOptions="Center"
              FontSize="18"
-             IsEnabled="False"/>
-      
-      <Button x:Name="btnEnviarConfirmar" 
-              Text="Enviar"
+             IsEnabled="False"
+             BackgroundColor="White"
+      />
+
+      <Button x:Name="btnEnviarConfirmar"
+              Text="ENVIAR"
+              TextColor="White"
+              BackgroundColor="#ff5722"
               VerticalOptions="EndAndExpand"
               HorizontalOptions="FillAndExpand"
               Clicked="OnEnviarConfimarClicked"/>
-    
+
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

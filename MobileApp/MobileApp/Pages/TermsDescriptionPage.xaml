@@ -2,5 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileApp.Pages.TermsDescriptionPage">
-  <Label Text="Descrição Licença" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <Label VerticalOptions="Center" HorizontalOptions="Center">
+    <Label.FormattedText>
+      <FormattedString>
+        <Span Text="Politica de Privacidade"/>
+        <Span Text="&#10;Parágrafo 1"/>
+        <Span Text="&#10;Parágrafo 2"/>
+        <Span Text="&#10;Parágrafo 3"/>
+      </FormattedString>
+    </Label.FormattedText>
+  </Label>
+
 </ContentPage>
