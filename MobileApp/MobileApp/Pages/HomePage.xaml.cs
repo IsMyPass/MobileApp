@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace MobileApp.Pages
 {
-    public partial class HomePage : ContentPage
+    public partial class HomePage : CarouselPage
     {
         public HomePage()
         {
