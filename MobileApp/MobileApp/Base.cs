@@ -40,10 +40,7 @@ namespace MobileApp
                     _UserInfo = JsonConvert.DeserializeObject<UserInfo>(strUserInfo);
 
 
-                    var principalPage = new NavigationPage(new PrincipalPage());
-                    principalPage.BarBackgroundColor = AppConstants.CorPrincipal;
-
-                    App.Current.MainPage = principalPage;
+                    App.Current.MainPage = new PrincipalPage();
                 }
             }
             else

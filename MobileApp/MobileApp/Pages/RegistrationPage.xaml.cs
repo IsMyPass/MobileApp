@@ -53,10 +53,8 @@ namespace MobileApp.Pages
             FileHelper fileHelper = new FileHelper();
             fileHelper.WriteTextAsync("UserInfo", strPhoneNumber);
 
-            var principalPage = new NavigationPage(new PrincipalPage());
-            principalPage.BarBackgroundColor = AppConstants.CorPrincipal;
 
-            App.Current.MainPage = principalPage;
+            App.Current.MainPage = new PrincipalPage();
         }
     }
 }
