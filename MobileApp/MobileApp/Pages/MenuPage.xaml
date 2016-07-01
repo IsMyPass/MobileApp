@@ -2,19 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileApp.Pages.MenuPage"
-             Padding="0,40,0,0"
-             Icon="icon.png"
-             Title="Titulo">
+             Title="MenuPage"
+             BackgroundColor="#ffab91">
   
   <ContentPage.Content>
-    <StackLayout VerticalOptions="FillAndExpand">
+    <StackLayout Padding="20" VerticalOptions="FillAndExpand">
 
-      <Label Text="Menu"/>
+      <Label Text="MENU" FontSize="24" FontAttributes="Bold" TextColor="White"/>
       
-      <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+      <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default">
         <ListView.ItemTemplate>
           <DataTemplate>
-            <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
+            <ViewCell>
+              <StackLayout Padding="15, 5, 15, 5" Orientation="Horizontal">
+                <Image Source="{Binding IconSource}"/>
+                <Label Text="{Binding Title}" FontSize="18" TextColor="White" VerticalOptions="Center" /> 
+              </StackLayout>           
+            </ViewCell>
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>

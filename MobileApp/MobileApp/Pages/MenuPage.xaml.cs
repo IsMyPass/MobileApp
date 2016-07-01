@@ -22,13 +22,13 @@ namespace MobileApp.Pages
             menuPageItems.Add(new MenuPageItem
             {
                 Title = "Home",
-                IconSource = "icon.png",
+                IconSource = "home.png",
                 TargetType = typeof(HomePage)
             });
             menuPageItems.Add(new MenuPageItem
             {
                 Title = "Contato",
-                IconSource = "icon.png",
+                IconSource = "contact.png",
                 TargetType = typeof(ContactPage)
             });
 
